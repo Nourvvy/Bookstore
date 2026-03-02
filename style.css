@@ -1,0 +1,186 @@
+body {
+  background-color: rgb(255,233,178);
+  background-image: url("them.jpg");
+  background-size: contain;
+  font-family: Griffy;
+}
+
+.them {
+  background-color: rgb(62,37,2);
+  color: white;
+  font-weight: bold;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 10px;
+}
+header {
+  width: 97%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin-top: -5px;
+  position: fixed;
+  z-index: 1000;
+  top: 20%;
+}
+.back {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin-top: -5px;
+  position: fixed;
+  z-index: 1000;
+  top: 0.5%;
+  backdrop-filter: blur(10px);
+}
+.welcome h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px rgb(62,37,2);
+  font-size: 40px;
+}
+.welcome .span {
+  font-size: 50px;
+  color: rgb(62,37,2);
+  text-shadow: 0px 0px 15px rgb(255,255,255);
+  display: flex;
+  justify-content: center;
+}
+.welcome .span1 {
+  transform: scaley(2);
+  margin-top: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.welcome p {
+  font-weight: bold;
+  color: rgb(62,37,2);
+  font-size: 20px;
+  margin-top: -10px;
+}
+.welcome .p {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin-top: 100px;
+}
+.down {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  animation-name: down;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes down {
+  to{
+    transform: scale(1) translatey(20px);
+  }
+}
+.romantic {
+  transform: translatey(200px);
+  background-image: url("romantic.png");
+  background-size: contain;
+  background-position: top;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: -10px;
+  margin-right: -10px;
+  font-family: Emilys Candy;
+}
+.romantic h2 {
+  color: rgb(255,255,255);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 0px 0px 10px rgb(255,0,0);
+  width: 100%;
+  height: 50px;
+  padding: 2px;
+  animation-name: romantic;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  margin-top: 5px;
+}
+@keyframes romantic {
+  to{
+    text-shadow: 0px 0px 20px rgb(255,0,0);
+    box-shadow: 0px 0px 20px 0px rgb(255 0 0 );
+  }
+}
+.books {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-column: 1;
+  grid-row-gap: 0px;
+}
+.b {
+  display: grid;
+  justify-self: center;
+  width: 250px;
+  height: 350px;
+  background-color: rgb(62,37,2);
+  margin-top: 50px;
+}
+.books p {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255,255,255);
+  text-shadow: 0px 0px 5px rgb(255,0,0);
+  margin-top: 5px;
+}
+.fantasy {
+  transform: translatey(200px);
+  background-image: url("fantasy.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: top;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: -10px;
+  margin-right: -10px;
+  font-family: ;
+}
+.fantasy h2 {
+  color: rgb(255,255,255);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 0px 0px 10px rgb(26,71,42);
+  width: 100%;
+  height: 60px;
+  padding: 2px;
+  animation-name: fantasy;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  margin-top: 5px;
+}
+@keyframes fantasy {
+  to{
+    text-shadow: 0px 0px 20px rgb(26,71,42);
+    box-shadow: 0px 0px 20px 0px rgb(26,71,42);
+  }
+}
+.fantasy .books p {
+  text-shadow: 0px 0px 20px rgb(26,71,42);
+}
+@media (max-width:) {
+  
+}
